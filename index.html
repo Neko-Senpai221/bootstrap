@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.rtl.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      
+       body {
+    position: relative; 
+   }
+   #section1 {padding-top:50px;height:500px;color: #fff; background-color: #1E88E5;}
+   #section2 {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+   #section3 {padding-top:50px;height:500px;color: #fff; background-color: #ff9800;}
+   #section41 {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+   #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+   #navbar{
+    display:inline-flex;
+   }
+
+
+    </style>
+    <script>
+        $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+        </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- scrollspy -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="#">WebSiteName</a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#section41">Section 4-1</a></li>
+                    <li><a href="#section42">Section 4-2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>    
+      
+    <!-- tabs and pills -->
+    <div class="container">
+        
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#a">Home</a></li>
+          <li><a href="#b">rockbee</a></li>
+          <li><a href="#c">highland</a></li>
+          
+        </ul>
+    <!-- header -->
+    <header>
+    <!-- top i guess -->
+<div id="section1" class="jumbotron text-center">
+    <h1>welcome to my heaven bar</h1>
+    <p class="bg-warning">drink as much as u like as long as you got cash in hand and bank</p>
+</div>
+</header><br/>
+<!-- basic bootstrap -->
+<div class="container-fluid text-center">
+    <h1><mark>we got variety of wine out here</mark></h1>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <h2 id="b" class="text-muted">we got this wine called <abbr title="drink and dance, speak english like william shakespear">rock-bee</abbr> </h2>
+            <img class="img-thumbnail" src="https://www.oneclickshopbhutan.com/wp-content/uploads/2020/11/rockbeebig_oneclickshop-removebg-preview.png"/><br/>
+            <h2 id="c" class="text-success">here, we got this wine called highland</h2>
+            <img class="img-thumbnail" src="https://cdn.shopify.com/s/files/1/0012/1723/3011/products/grain-whiskey_283x600_fb873696-c316-47de-9967-e1f766adb21d_1024x1024@2x.jpg?v=1594447609" alt="highland" />
+        </div>
+    </div>
+</div><br/>
+<!-- table part out here -->
+<div id="section2" class="container text-center">
+    <h2 class="text-muted">wine and their prices</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+            <th>name</th>
+            <th>price/bottle</th>
+            <th>remarks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="danger">
+            <td >rockbee</td>
+            <td>nu,200</td>
+            <td>drink once and fall in love once again</td>
+        </tr>
+        <tr class="active">
+            <td >jin-lime</td>
+            <td>nu,250</td>
+            <td>you want to taste juice in wine, come have a taste of this</td>
+        </tr>
+        <tr class="success">
+            <td >highland</td>
+            <td>nu,300</td>
+            <td>drink once to know how it feels to be in high-land</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<br/>
+<!-- this one here is for well -->
+<div class="container text-center">
+    <h1>some one once said</h1>
+    <div class="well"><p class="text-muted"><b><q>drink beer, save water</q></b></p></div>
+</div><br/>
+<!-- this is for alert -->
+<div class="container">
+    <div class="alert alert-success alert-dismissible fade in">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+       <strong>beer!</strong> you can drink as much as u like.. we got it in stock.
+       </div>
+</div>
+<!-- buttons here -->
+<div class="container text-center">
+    <h2>Button Tags</h2>
+    <a href="#a" class="btn btn-info" role="button">Link Button</a>
+    <button type="button" class="btn btn-info">Button</button>
+    <input type="button" class="btn btn-info" value="Input Button">
+    <input type="submit" class="btn btn-info" value="Submit Button">
+  </div><br/><br>
+  <!-- buttons group -->
+<div class="btn-group text-center">
+    <h2>here is how button group works</h2>
+    <a href="#b" class="btn btn-warning" role="button">rockbee Button</a>
+    <a href="#c" class="btn btn-info" role="button">highland Button</a>
+</div><br/>
+<!-- badge -->
+<div class="container text-center">
+    <a href="#" > new wine in the shop <span class="badge">3</span> </a>
+</div><br/>
+<!-- progress bar -->
+<div class="container text-center">
+    <h2>wine sales</h2>
+    <div class="progress">
+      <div class="progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+        <span class="sr-only">75% sold within a week</span>
+      </div>
+    </div>
+  </div>
+  <!-- paginaton -->
+  <div class="container text-center">
+    <ul class="pagination">
+        <li><a href="#b">rockbee</a></li>
+        <li><a href="#c">highland</a></li>
+        <li class="disabled"><a href="#">jin-lime</a></li>
+    </ul>
+  </div>
+<!-- pager -->
+<div class="container text-center">
+                 
+  <ul class="pager">
+    <li><a href="#">Previous</a></li>
+    <li><a href="#">Next</a></li>
+  </ul>
+</div>
+<!-- group -->
+<div class="container">
+    <h2>wine List Group</h2>
+    <ul class="list-group">
+      <li class="list-group-item">rockbee</li>
+      <li class="list-group-item">highland</li>
+      <li class="list-group-item">jin-lime</li>
+    </ul>
+  </div>
+  <!-- dropdowns -->
+  <div class="container text-center">
+    <div class="dropdown">
+        <h1>we got many many beautiful wine in our shop</h1>
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu text-center">
+          <li><a href="#b">rockbee</a></li>
+          <li><a href="#c">highland</a></li>
+          
+        </ul>
+      </div>
+  </div><br/><br/>
+<!-- collapse -->
+<div class="container text-center">
+    <h1>drink rockbee</h1>
+    <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#rockbee">read about rockbee</button>
+  <div id="rockbee" class="collapse">
+    rockbee is a devine dirty wine u can find in a shop. drink once and become a degenerate addict who does nothing more than love drinking rockbee
+  </div>
+</div>
+<!-- forms -->
+<div class="container">
+    <h2>sign-in to get 5% discount</h2>
+    <form action="">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div>
+<!-- media i donk know what -->
+<div class="container">
+    <h2>Media Object</h2>
+    <p>Use the "media-left" class to left-align a media object. Text that should appear next to the image, is placed inside a container with class="media-body".</p>
+    <p>Tip: Use the "media-right" class to right-align the media object.</p><br>
+    
+    <!-- Left-aligned media object -->
+    <div class="media">
+      <div class="media-left">
+        <img src="https://www.oneclickshopbhutan.com/wp-content/uploads/2020/11/rockbeebig_oneclickshop-removebg-preview.png" class="media-object" style="width:60px">
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">rockbee</h4>
+        <p>drink rockbee untill u can remember no more how much rockbee u drank last night</p>
+      </div>
+    </div>
+    <hr>
+    
+    <!-- Right-aligned media object -->
+    <div class="media">
+      <div class="media-body">
+        <h4 class="media-heading">Right-aligned</h4>
+        <p>something about highland is really needed to be talked among alcholics i guess</p>
+      </div>
+      <div class="media-right">
+        <img src="https://cdn.shopify.com/s/files/1/0012/1723/3011/products/grain-whiskey_283x600_fb873696-c316-47de-9967-e1f766adb21d_1024x1024@2x.jpg?v=1594447609" class="media-object" style="width:60px">
+      </div>
+    </div>
+  </div>
+<!-- carousel -->
+<div class="container">
+    <h2>Carousel Example</h2>  
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  
+      <!-- Wrapper for slides -->
+      <div id="section3" class="carousel-inner">
+        <div class="item active">
+          <img src="https://cdn.shopify.com/s/files/1/0012/1723/3011/products/grain-whiskey_283x600_fb873696-c316-47de-9967-e1f766adb21d_1024x1024@2x.jpg?v=1594447609" alt="highland" style="width:500px;">
+        </div>
+  
+        <div class="item">
+          <img src="https://www.oneclickshopbhutan.com/wp-content/uploads/2020/11/rockbeebig_oneclickshop-removebg-preview.png" alt="rockbee" style="width:500px; height:400px;">
+        </div>
+      
+        <div class="item">
+          <img src="https://content.thirtyonewhiskey.com/wp-content/uploads/2022/09/23100944/PXL_20220923_145651368.PORTRAIT-scaled.jpg" alt="jin-lime" style="width:500px;">
+        </div>
+      </div>
+  
+      <!-- Left and right controls -->
+      <a id="section41" class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- modaL -->
+  <div id="section42" class="container">
+    <h2>Modal Example</h2>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">rockbee</h4>
+          </div>
+          <div class="modal-body">
+            <p>rockbee is very delicious when u drink. enjoy the taste of bee from rock..</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  <!-- tooltip -->
+  <div class="container text-center">
+    <h3>Tooltip Example</h3>
+    <p>The data-placement attribute specifies the tooltip position.</p>
+    <ul class="list-inline">
+      <li><a href="#" data-toggle="tooltip" data-placement="top" title="rockbee!">Top</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="jin-lime!">Bottom</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="left" title="highland!">Left</a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="right" title="vodka!">Right</a></li>
+    </ul>
+  </div>
+  <!-- popover -->
+  <div class="container">
+    <h3>Popover Example</h3>
+    <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Toggle popover</a>
+  </div>
+
+
+</body>
+</html>
